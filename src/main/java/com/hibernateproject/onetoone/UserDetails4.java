@@ -1,18 +1,17 @@
-package com.hibernateproject;
+package com.hibernateproject.onetoone;
 
-import java.util.Date;
-
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
-@Table(name="user_details1")
-public class UserDetails1 {
+@Table(name="user_details4")
+public class UserDetails4 {
 	@Id
 	@GeneratedValue
 	@Column(name="user_id")
@@ -21,9 +20,9 @@ public class UserDetails1 {
 	@Column(name="user_name")
 	private String userName;
 	
-	@Temporal(TemporalType.DATE)
-	@Column(name="join_date")
-	private Date joinDate;
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="vehicle_id")
+	private Vehicle vehicle;
 	
 	public int getUserId() {
 		return userId;
@@ -37,11 +36,12 @@ public class UserDetails1 {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public Date getJoinDate() {
-		return joinDate;
+	public Vehicle getVehicle() {
+		return vehicle;
 	}
-	public void setJoinDate(Date joinDate) {
-		this.joinDate = joinDate;
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
 	}
+	
 	
 }

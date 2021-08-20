@@ -25,6 +25,10 @@
 		<mapping class="com.hibernateproject.UserDetails1" />
 		<mapping class="com.hibernateproject.basics.UserDetails2" />
 		<mapping class="com.hibernateproject.collection.UserDetails3" />
+		<mapping class="com.hibernateproject.onetoone.UserDetails4" />
+		<mapping class="com.hibernateproject.onetoone.Vehicle" />
+		<mapping class="com.hibernateproject.onetomany.UserDetails5" />
+		<mapping class="com.hibernateproject.onetomany.Laptop" />
 		<!-- <mapping class="com.hibernateproject.basics.Address" /> -->
 	</session-factory>
 </hibernate-configuration>
