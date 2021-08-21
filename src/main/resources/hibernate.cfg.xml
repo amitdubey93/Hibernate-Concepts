@@ -22,8 +22,8 @@
 		<!-- <property name="hibernate.dbcp.initialSize">5</property> <property 
 			name="hibernate.dbcp.maxTotal">20</property> <property name="hibernate.dbcp.maxIdle">10</property> 
 			<property name="hibernate.dbcp.minIdle">5</property> <property name="hibernate.dbcp.maxWaitMillis">-1</property> -->
-		<mapping class="com.hibernateproject.UserDetails1" />
-		<mapping class="com.hibernateproject.basics.UserDetails2" />
+		<mapping class="com.hibernateproject.UserDetails" />
+		<!-- <mapping class="com.hibernateproject.basics.UserDetails2" />
 		<mapping class="com.hibernateproject.collection.UserDetails3" />
 		<mapping class="com.hibernateproject.onetoone.UserDetails4" />
 		<mapping class="com.hibernateproject.onetoone.Vehicle" />
@@ -31,6 +31,9 @@
 		<mapping class="com.hibernateproject.onetomany.Laptop" />
 		<mapping class="com.hibernateproject.manytomany.Student" />
 		<mapping class="com.hibernateproject.manytomany.Course" />
+		<mapping class="com.hibernateproject.inheritance.Employee" />
+		<mapping class="com.hibernateproject.inheritance.RegularEmployee" />
+		<mapping class="com.hibernateproject.inheritance.ContractEmployee" /> -->
 		<!-- <mapping class="com.hibernateproject.basics.Address" /> -->
 	</session-factory>
 </hibernate-configuration>
