@@ -29,6 +29,8 @@
 		<mapping class="com.hibernateproject.onetoone.Vehicle" />
 		<mapping class="com.hibernateproject.onetomany.UserDetails5" />
 		<mapping class="com.hibernateproject.onetomany.Laptop" />
+		<mapping class="com.hibernateproject.manytomany.Student" />
+		<mapping class="com.hibernateproject.manytomany.Course" />
 		<!-- <mapping class="com.hibernateproject.basics.Address" /> -->
 	</session-factory>
 </hibernate-configuration>
