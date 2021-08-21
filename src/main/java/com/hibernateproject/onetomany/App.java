@@ -17,6 +17,8 @@ public class App
     	user.setUserName("Arya");
     	user.getLaptops().add(laptop1);
     	user.getLaptops().add(laptop2);
+    	laptop1.setUser(user);
+    	laptop2.setUser(user);
     	
     	
     	
@@ -24,8 +26,8 @@ public class App
     	Session session = sessionFactory.openSession();
     	session.beginTransaction();
     	session.save(user);
-    	session.save(laptop1);
-    	session.save(laptop2);
+    	//session.save(laptop1);
+    	//session.save(laptop2);
     	session.getTransaction().commit();
     	session.close();
     	

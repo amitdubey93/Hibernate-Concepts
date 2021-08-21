@@ -24,9 +24,11 @@ public class UserDetails5 {
 	@Column(name="user_name")
 	private String userName;
 	
-	@OneToMany
-	@JoinTable(name="user_laptop", joinColumns=@JoinColumn(name="user_id"),
-				inverseJoinColumns=@JoinColumn(name="laptop_id"))
+	@OneToMany(mappedBy="user",cascade=CascadeType.ALL)
+	//@JoinTable(name="user_laptop", joinColumns=@JoinColumn(name="user_id"),
+	//			inverseJoinColumns=@JoinColumn(name="laptop_id"))
+	
+	/*jointable is not needed for biderectional relationship when you use mappedby*/
 	
 	private Collection<Laptop> laptops = new ArrayList<Laptop>();
 	
